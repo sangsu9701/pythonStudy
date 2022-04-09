@@ -76,6 +76,7 @@ print('a - ', a.count(6))
 # append: 맨 마지막에 추가, insert: 해당 인덱스에 값을 넣고 나머지 뒤로 밀기
 # 삭졔: remove, pop, del
 
+# 반목문 활용
 while a:
     data = a.pop()
     print(data)
