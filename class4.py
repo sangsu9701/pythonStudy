@@ -16,7 +16,7 @@ d = { # Java에서 Json형태와 비슷
     'Status': True
 }
 
-e = dict([ # 잘 사용하지는 않지만 FM대로 표현하는 방법
+e = dict([ # 잘 사용하지는 않지만 FM대로 표현하는 방법 (list 안에 tuple 이 들어 있다)
     ('Name', 'NiceMan'),
     ('City', 'Seoul'),
     ('Age', 33),
@@ -41,7 +41,6 @@ print('f - ', type(f), f)
 
 
 # 출력
-
 print('a - ', a['name']) # key가 없다면 type error 발생. 프로그램이 끊김
 print('a - ', a.get('name1')) # get으로 가져오면, key가 없어도 None으로 출력해줌. 프로그램이 끊기지는 않음
 print('b - ', b[0])
