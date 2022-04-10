@@ -103,3 +103,5 @@ name2 = 'Aceman'
 
 print('Reversed', reversed(name2))
 print('List', list(reversed(name2)))
+print('Tuple', tuple(reversed(name2)))
+print('Set', set(reversed(name2))) # 순서가 없어 뒤죽박죽으로 나온다, 같은 소문자가 2개와 같이 중복이 나온다면 제거되어서 나온다.
