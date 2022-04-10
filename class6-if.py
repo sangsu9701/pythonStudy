@@ -57,5 +57,5 @@ r = (10, 12, 14)
 print(15 in q)
 print(90 in w)
 print(12 not in r)
-print("name" in e)
+print("name" in e) # key 중에 탐색
 print("Seoul" in e.values())
