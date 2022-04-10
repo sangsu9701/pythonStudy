@@ -72,7 +72,10 @@ print('s1 - ', s1)
 
 s1.remove(2)
 print('s1 - ', s1)
-# s1.remove(7)
+# s1.remove(7) ## 오류 발생 O 
 
 s1.discard(3)
 print('s1 - ', s1)
+# s1.discard(7) ## 오류 발생 X - 예외를 발생시키지 않는다 
+
+s1.clear()
