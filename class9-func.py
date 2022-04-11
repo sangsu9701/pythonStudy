@@ -92,3 +92,30 @@ def nested_func(num):
     func_in_func(num + 100)
 
 nested_func(100)
+# 함수 안의 함수를 바로 부를 수 없다. 에러 발생
+# func_in_func(200)
+
+
+# 람다식 예제
+# 메모리 절약, 가독성 향상, 코드 간결
+# 함수는 객체 생성 -> 리소스(메모리) 할당
+# 람다는 즉시 실행 함수 (Heap 초기화) -> 메모리 초기화 : 효율적으로 메모리를 사용
+# 너무 남발 시에는 가독성이 오히려 감소
+
+# 일반적 함수 -> 할당
+def mul_func(x, y):
+    return x * y 
+
+print(mul_func(10,50))
+
+mul_func_var = mul_func
+print(mul_func_var(20,50))
+
+# 람다 함수 -> 할당
+lambda_mul_func = lambda x, y:x*y
+print(lambda_mul_func(50, 50))
+
+def func_final(x, y, func):
+    print('>>>>', x * y * func(100, 100))
+
+func_final(10, 20, mul_func_var)
