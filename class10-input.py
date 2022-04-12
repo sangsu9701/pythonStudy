@@ -1,7 +1,7 @@
 # Chapter 05-2
 # 파이썬 사용자 입력
 # Input 사용법
-# 기본 타임(str)
+# 기본 타입(str)
 
 # 예제 1
 name = input("Enter Your Name : ")
